@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iconifier.Controller">
+<children><Label layoutX="104.0" layoutY="35.0" text="Welcome to Iconifier!">
+<font>
+<Font size="25.0" />
+</font></Label><Button fx:id="imageSelectButton" layoutX="37.0" layoutY="85.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="Select Image" /><Label fx:id="imageDirectoryLabel" layoutX="180.0" layoutY="85.0" prefHeight="26.0" prefWidth="240.0">
+<font>
+<Font size="14.0" />
+</font></Label><ImageView fx:id="iconPreview" fitHeight="140.0" fitWidth="140.0" layoutX="154.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" /><Button fx:id="destSelectButton" layoutX="37.0" layoutY="130.0" mnemonicParsing="false" text="Select Destination" /><Label fx:id="destLabel" layoutX="180.0" layoutY="130.0" prefHeight="26.0" prefWidth="240.0">
+<font>
+<Font size="14.0" />
+</font>
+</Label><Button fx:id="startButton" layoutX="194.0" layoutY="375.0" mnemonicParsing="false" text="Iconify!" /><Label fx:id="messageLabel" layoutX="13.0" layoutY="408.0" prefHeight="26.0" prefWidth="423.0" textAlignment="CENTER">
+<font>
+<Font size="15.0" />
+</font></Label><Label fx:id="resolutionLabel" layoutX="135.0" layoutY="325.0" prefHeight="26.0" prefWidth="180.0" textAlignment="CENTER">
+<font>
+<Font size="14.0" />
+</font>
+</Label>
+</children></AnchorPane>
