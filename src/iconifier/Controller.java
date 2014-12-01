@@ -12,10 +12,13 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Window;
 
+import java.awt.Desktop;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 import javax.imageio.ImageIO;
 
@@ -24,6 +27,7 @@ public class Controller {
 	private static BufferedImage src = null;
 	private static File dest = null;
 
+	public Button beautifullyNamedButton;
 	public Button destSelectButton;
 	public Button imageSelectButton;
 	public Button startButton;
@@ -35,6 +39,14 @@ public class Controller {
 
 	@FXML
 	void initialize() {
+		beautifullyNamedButton.setOnAction(event -> {
+			try {
+				Desktop.getDesktop().browse(new URL("http://www.twitter.com/DoktuhParadox").toURI());
+			} catch (IOException | URISyntaxException e) {
+				System.out.println("Couldn\'t open twitter link for you. Sorry :C");
+			}
+		});
+
 		imageSelectButton.setOnAction(event -> {
 			FileChooser fileChooser = new FileChooser();
 			fileChooser.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("Restrict only to png image files", "png"));
@@ -94,7 +106,7 @@ public class Controller {
 								ImageIO.write(Scalr.resize(src, (int) img.getWidth()), "png", imgFile); //Only overwrites the contents of the original image file, reusing it
 								processedImagesCount++;
 							} else {
-								System.out.printf("Ignoring %s; invalid resolution (%sx%s); width must equal height", imgFile.getPath(), img.getWidth(), img.getHeight());
+								System.out.printf("Ignoring %s; invalid resolution (%sx%s); width must equal height\n", imgFile.getPath(), img.getWidth(), img.getHeight());
 								skippedImagesCount++;
 							}
 						}
