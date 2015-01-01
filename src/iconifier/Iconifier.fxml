@@ -5,46 +5,37 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0"
-            prefWidth="448.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="iconifier.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iconifier.Controller">
     <children>
         <Label layoutX="104.0" layoutY="35.0" text="Welcome to Iconifier!">
             <font>
-                <Font size="25.0"/>
+                <Font size="25.0" />
             </font>
         </Label>
-        <Button fx:id="imageSelectButton" layoutX="37.0" layoutY="85.0" mnemonicParsing="false" prefHeight="26.0"
-                prefWidth="126.0" text="Select Image"/>
+        <Button fx:id="imageSelectButton" layoutX="37.0" layoutY="85.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="Select Image" />
         <Label fx:id="imageDirectoryLabel" layoutX="180.0" layoutY="85.0" prefHeight="26.0" prefWidth="240.0">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <ImageView fx:id="iconPreview" fitHeight="140.0" fitWidth="140.0" layoutX="154.0" layoutY="170.0"
-                   pickOnBounds="true" preserveRatio="true"/>
-        <Button fx:id="destSelectButton" layoutX="37.0" layoutY="130.0" mnemonicParsing="false"
-                text="Select Destination"/>
-        <Label fx:id="destLabel" layoutX="180.0" layoutY="130.0" prefHeight="26.0" prefWidth="240.0"
-               textOverrun="LEADING_ELLIPSIS">
+        <ImageView fx:id="iconPreview" fitHeight="140.0" fitWidth="140.0" layoutX="154.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="destSelectButton" layoutX="37.0" layoutY="130.0" mnemonicParsing="false" text="Select Destination" />
+        <Label fx:id="destLabel" layoutX="180.0" layoutY="130.0" prefHeight="26.0" prefWidth="240.0" textOverrun="LEADING_ELLIPSIS">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <Button fx:id="startButton" layoutX="194.0" layoutY="375.0" mnemonicParsing="false" text="Iconify!"/>
-        <Label fx:id="messageLabel" layoutX="13.0" layoutY="408.0" prefHeight="26.0" prefWidth="423.0"
-               textAlignment="CENTER">
+        <Button fx:id="startButton" layoutX="194.0" layoutY="375.0" mnemonicParsing="false" text="Iconify!" />
+        <Label fx:id="messageLabel" layoutX="13.0" layoutY="408.0" prefHeight="26.0" prefWidth="423.0" textAlignment="CENTER">
             <font>
-                <Font size="15.0"/>
+                <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="resolutionLabel" layoutX="155.0" layoutY="327.0" prefHeight="26.0" prefWidth="140.0"
-               textAlignment="CENTER">
+        <Label fx:id="resolutionLabel" layoutX="155.0" layoutY="327.0" prefHeight="26.0" prefWidth="140.0" textAlignment="CENTER">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <Button fx:id="beautifullyNamedButton" layoutX="294.0" layoutY="408.0" mnemonicParsing="false"
-                style="-fx-background-color: transparent; -fx-text-fill: blue;" text="By @DoktuhParadox"/>
+        <Button fx:id="beautifullyNamedButton" layoutX="294.0" layoutY="408.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: blue;" text="By @DoktuhParadox" />
     </children>
 </AnchorPane>
