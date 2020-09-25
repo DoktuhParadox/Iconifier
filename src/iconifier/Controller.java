@@ -39,7 +39,7 @@ public class Controller {
     void initialize() {
         beautifullyNamedButton.setOnAction(event -> {
             try {
-                Desktop.getDesktop().browse(new URL("http://www.twitter.com/DoktuhParadox").toURI());
+                Desktop.getDesktop().browse(new URL("http://www.twitter.com/_uglyluigi").toURI());
             } catch (IOException | URISyntaxException e) {
                 System.out.println("Couldn\'t open twitter link for you. Sorry :C");
             }
